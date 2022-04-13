@@ -21,7 +21,7 @@ app.get("/sample", function(request, response) {
 });
 
 app.get("/aboutme", function(request, response) {
-  response.sendFile(__dirname + "/views/about.html");
+  response.sendFile(__dirname + "/views/aboutme.html");
 });
 
 // listen for requests :)
