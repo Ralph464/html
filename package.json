@@ -10,7 +10,8 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "heroku": "^7.60.2"
   },
   "engines": {
     "node": "8.x"
