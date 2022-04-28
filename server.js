@@ -7,7 +7,9 @@ const app = express();
 
 // we've started you off with Express,
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
-
+function myFunction1() {
+document.getElementById("demo").innerHTML = "JESUS IS KING!!!!";
+}
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static("public"));
 
@@ -22,6 +24,14 @@ app.get("/sample", function(request, response) {
 
 app.get("/aboutme", function(request, response) {
   response.sendFile(__dirname + "/views/aboutme.html");
+});
+
+app.get("/index", function(request, response) {
+  response.sendFile(__dirname + "/views/index.html");
+});
+
+app.get("/jesus", function(request, response) {
+  response.sendFile(__dirname + "/views/jesus.html");
 });
 
 // listen for requests :)
